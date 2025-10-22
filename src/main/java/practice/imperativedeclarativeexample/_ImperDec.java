@@ -3,7 +3,7 @@ package practice.imperativedeclarativeexample;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class Prac1 {
+public class _ImperDec {
     static void main(String[] args) {
         List<Person> people = List.of(
                 new Person("John", Gender.MALE),
