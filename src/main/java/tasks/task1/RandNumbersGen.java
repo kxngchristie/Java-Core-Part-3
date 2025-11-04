@@ -1,6 +1,5 @@
 package tasks.task1;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Stream;
@@ -9,24 +8,44 @@ public class RandNumbersGen {
 
     static void main(String[] args) {
 
-        // Manual Addition of Elements to Stream to Output.
-        Stream<Integer> stream = Stream.of(1,2,3,4,5,6,7,8,9);
-        System.out.println("\nList of Numbers Manually Added to Stream:");
-        stream.forEach(System.out::println); // Printing all Elements in the Stream
+        // Task 1: Manual Stream.of()
+        List<Integer> manualStream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).toList();
+        printFancyTable(manualStream, "Task 1: List of Numbers Manually Added to Stream");
+        System.out.println();
 
-        // Generating a Stream of Random Numbers with a limit.
+        // Task 2: Generate a List of 20 Random Numbers between 0 and 99
         List<Integer> randomNumbers = Stream.generate(() -> new Random().nextInt(100)) // Supplier generating random integers between 0 and 99
                 .limit(20)
-                .toList(); // Collecting the first 20 random integers into a List
-        System.out.println("\nList of 20 Random Numbers:");
-        randomNumbers.forEach(System.out::println); // Printing all Random Numbers
+                .toList();
+        printFancyTable(randomNumbers, "Task 2: List of 20 Generated Random Numbers");
+        System.out.println();
 
-        // Filtering Even Numbers from a List of Integers.
-        List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
-        List<Integer> randomNumbersEven = list.stream()
-                .filter(num -> num % 2 == 0) // Filtering Even Numbers
-                .toList(); // Collecting Even Numbers into a List
-        System.out.println("\nList of Even Random Numbers:");
-        randomNumbersEven.forEach(System.out::println);
+        // Task 3a: Filter even numbers from generated list
+        List<Integer> randomNumbersEven = randomNumbers.stream()
+                .filter(num -> num % 2 == 0)
+                .toList();
+        printFancyTable(randomNumbersEven, "Task 3a: List of Even Numbers from Generated List");
+    }
+
+    public static void printFancyTable(List<?> items, String title) {
+        int width = 52;
+        String border = "+" + "-".repeat(width - 2) + "+";
+
+        System.out.println(border);
+        System.out.printf("|%s|\n", centerText(title, width - 2));
+        System.out.println(border);
+
+        for (Object item : items) {
+            System.out.printf("|%s|\n", centerText(item.toString(), width - 2));
+        }
+
+        System.out.println(border);
+    }
+
+    private static String centerText(String text, int width) {
+        int padding = (width - text.length()) / 2;
+        String spaces = " ".repeat(Math.max(0, padding));
+        String extra = (text.length() % 2 == 0) ? "" : " "; // handle odd lengths
+        return spaces + text + spaces + extra;
     }
 }
