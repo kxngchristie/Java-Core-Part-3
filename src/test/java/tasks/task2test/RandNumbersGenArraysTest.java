@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RandNumbersGenArraysTest {
 
-    // Test 1: Verify that the generated list contains numbers from 1 to 9
+    // Test 3b: Verify that the generated list contains numbers from 1 to 9
     @Test
     void testGenerateIntegersList() {
         List<Integer> listOfInts = IntStream.range(1, 10)
@@ -21,7 +21,7 @@ public class RandNumbersGenArraysTest {
         assertEquals(Arrays.asList(1,2,3,4,5,6,7,8,9), listOfInts); // Check content
     }
 
-    // Test 2: Verify that even numbers are correctly collected into an array
+    // Test 4: Verify that even numbers are correctly collected into an array
     @Test
     void testCollectEvenNumbersToArray() {
         List<Integer> listOfInts = IntStream.range(1, 10)
@@ -33,7 +33,7 @@ public class RandNumbersGenArraysTest {
         assertArrayEquals(new Integer[]{2,4,6,8}, ConvertedNumbersEvenArray);
     }
 
-    // Test 3: Verify filtering, mapping, and sorting of strings
+    // Test 5: Verify filtering, mapping, and sorting of strings
     @Test
     void testFilterConvertSort() {
         List<String> myList = Arrays.asList("a1", "a2", "b1", "c2", "c1");

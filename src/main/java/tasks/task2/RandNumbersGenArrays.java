@@ -15,12 +15,14 @@ public class RandNumbersGenArrays {
                 .toList();
         printFancyTable(listOfInts, "Task 3b: List of Numbers from 1 to 9");
         System.out.println();
+        System.out.println();
 
         // Task 4: Filtering Even Numbers from the List and Collecting into an Array
         Integer[] ConvertedNumbersEvenArray = listOfInts.stream()
                 .filter(num -> num % 2 == 0)
                 .toArray(Integer[]::new);
         printFancyTable(List.of(ConvertedNumbersEvenArray), "Task 4: Array of Even Numbers");
+        System.out.println();
         System.out.println();
 
         // Task 5: Filtering, Mapping, and Sorting a List of Strings

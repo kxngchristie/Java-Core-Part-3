@@ -1,10 +1,12 @@
 package tasks.task1test;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Stream;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -27,7 +29,7 @@ public class RandNumbersGenTest {
         assertTrue(randomNumbers.stream().allMatch(num -> num >= 0 && num < 100));
     }
 
-    // Task 3: Verify filtering of even numbers from the generated numbers' list
+    // Task 3a: Verify filtering of even numbers from the generated numbers' list
     @Test
     void testCollectEvenNumbers() {
         List<Integer> randomNumbers = Stream.generate(() -> new Random().nextInt(100))

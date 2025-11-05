@@ -12,12 +12,14 @@ public class RandNumbersGen {
         List<Integer> manualStream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).toList();
         printFancyTable(manualStream, "Task 1: List of Numbers Manually Added to Stream");
         System.out.println();
+        System.out.println();
 
         // Task 2: Generate a List of 20 Random Numbers between 0 and 99
         List<Integer> randomNumbers = Stream.generate(() -> new Random().nextInt(100)) // Supplier generating random integers between 0 and 99
                 .limit(20)
                 .toList();
         printFancyTable(randomNumbers, "Task 2: List of 20 Generated Random Numbers");
+        System.out.println();
         System.out.println();
 
         // Task 3a: Filter even numbers from generated list
@@ -28,7 +30,7 @@ public class RandNumbersGen {
     }
 
     public static void printFancyTable(List<?> items, String title) {
-        int width = 52;
+        int width = 60;
         String border = "+" + "-".repeat(width - 2) + "+";
 
         System.out.println(border);
