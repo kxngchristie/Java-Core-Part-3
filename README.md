@@ -32,8 +32,7 @@ src/
             └── LettersOnlyListTest.java             # 🧪 Letters Only List Tests
 ```
 
-### Home Tasks 📝
----
+## Home Tasks 📝
 
 #### Task 1: Random Numbers Generator (`tasks/task1/`)
 Files:
