@@ -5,31 +5,32 @@ This project contains practical Java programming tasks focusing on modern Java f
 ## Project Structure 📁
 
 ```
-src/
-├── main/java/
-│   └── tasks/                                  # Core Implementation
-│       ├── task1/
-│       │   └── RandNumbersGen.java             # 🎲 Random Numbers Generator
-│       ├── task2/
-│       │   └── RandNumbersGenArrays.java       # 📊 Random Numbers Arrays
-│       ├── task3/
-│       │   └── StringListManipulation.java     # 📝 String List Manipulation
-│       ├── task4/
-│       │   └── ArrayConcatenation.java         # 🔄 Array Concatenation
-│       └── task5/
-│           └── LettersOnlyList.java            # ✍️ Letters Only List
-└── test/java/
-    └── tasks/                                       # Test Implementation
-        ├── task1test/
-        │   └── RandNumbersGenTest.java              # 🧪 Random Numbers Generator Tests
-        ├── task2test/
-        │   └── RandNumbersGenArraysTest.java        # 🧪 Random Numbers Arrays Tests
-        ├── task3test/
-        │   └── StringListManipulationTest.java      # 🧪 String List Manipulation Tests
-        ├── task4test/
-        │   └── ArrayConcatenationTest.java          # 🧪 Array Concatenation Tests
-        └── task5test/
-            └── LettersOnlyListTest.java             # 🧪 Letters Only List Tests
+Java-Core-Part-3/
+└── src/  
+    ├── main/java/
+    │   └── tasks/                                  # Core Implementation
+    │       ├── task1/
+    │       │   └── RandNumbersGen.java             # 🎲 Random Numbers Generator
+    │       ├── task2/
+    │       │   └── RandNumbersGenArrays.java       # 📊 Random Numbers Arrays
+    │       ├── task3/
+    │       │   └── StringListManipulation.java     # 📝 String List Manipulation
+    │       ├── task4/
+    │       │   └── ArrayConcatenation.java         # 🔄 Array Concatenation
+    │       └── task5/
+    │           └── LettersOnlyList.java            # ✍️ Letters Only List
+    └── test/java/
+        └── tasks/                                       # Test Implementation
+            ├── task1test/
+            │   └── RandNumbersGenTest.java              # 🧪 Random Numbers Generator Tests
+            ├── task2test/
+            │   └── RandNumbersGenArraysTest.java        # 🧪 Random Numbers Arrays Tests
+            ├── task3test/
+            │   └── StringListManipulationTest.java      # 🧪 String List Manipulation Tests
+            ├── task4test/
+            │   └── ArrayConcatenationTest.java          # 🧪 Array Concatenation Tests
+            └── task5test/
+                └── LettersOnlyListTest.java             # 🧪 Letters Only List Tests
 ```
 
 ## Home Tasks 📝
