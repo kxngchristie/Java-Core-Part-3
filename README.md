@@ -33,6 +33,7 @@ src/
 ```
 
 ### Home Tasks 📝
+---
 
 #### Task 1: Random Numbers Generator (`tasks/task1/`)
 Files:
