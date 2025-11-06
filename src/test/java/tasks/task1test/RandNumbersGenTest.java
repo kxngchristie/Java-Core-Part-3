@@ -16,8 +16,10 @@ public class RandNumbersGenTest {
     @Test
     void testManualStreamOfElements() {
         List<Integer> manualStream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).toList();
+
         assertEquals(Arrays.asList(1,2,3,4,5,6,7,8,9), manualStream);
     }
+
 
     // Task 2: Verify generation of 20 random numbers within range
     @Test
@@ -25,9 +27,11 @@ public class RandNumbersGenTest {
         List<Integer> randomNumbers = Stream.generate(() -> new Random().nextInt(100)) // Supplier generating random integers between 0 and 99
                 .limit(20)
                 .toList();
+
         assertEquals(20, randomNumbers.size());
         assertTrue(randomNumbers.stream().allMatch(num -> num >= 0 && num < 100));
     }
+
 
     // Task 3a: Verify filtering of even numbers from the generated numbers' list
     @Test
@@ -38,6 +42,7 @@ public class RandNumbersGenTest {
         List<Integer> randomNumbersEven = randomNumbers.stream()
                 .filter(num -> num % 2 == 0)
                 .toList();
+
         assertTrue(randomNumbersEven.size() >= 2); // At least 2 even numbers expected
         assertTrue(randomNumbersEven.stream().allMatch(num -> num % 2 == 0)); // All numbers should be even
         assertTrue(randomNumbers.containsAll(randomNumbersEven)); // Even numbers should be from the original list

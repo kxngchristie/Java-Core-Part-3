@@ -17,9 +17,11 @@ public class RandNumbersGenArraysTest {
         List<Integer> listOfInts = IntStream.range(1, 10)
                 .boxed()
                 .toList();
+
         assertEquals(9, listOfInts.size()); // Check size
         assertEquals(Arrays.asList(1,2,3,4,5,6,7,8,9), listOfInts); // Check content
     }
+
 
     // Test 4: Verify that even numbers are correctly collected into an array
     @Test
@@ -30,8 +32,10 @@ public class RandNumbersGenArraysTest {
         Integer[] ConvertedNumbersEvenArray = listOfInts.stream()
                 .filter(num -> num % 2 == 0)
                 .toArray(Integer[]::new);
+
         assertArrayEquals(new Integer[]{2,4,6,8}, ConvertedNumbersEvenArray);
     }
+
 
     // Test 5: Verify filtering, mapping, and sorting of strings
     @Test
@@ -42,6 +46,7 @@ public class RandNumbersGenArraysTest {
                 .map(String::toUpperCase)
                 .sorted(Comparator.reverseOrder())
                 .toList();
+
         assertEquals(Arrays.asList("C2", "C1"), result);
         assertTrue(result.stream().allMatch(str -> str.startsWith("C")));
     }

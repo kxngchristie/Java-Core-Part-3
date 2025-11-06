@@ -11,24 +11,29 @@ public class StringListManipulation {
 
     static void main(String[] args) {
 
-        // Task 6a: Displaying All Names Starting with Letter 'A' and are more than 5 Characters long
-        List<String> memberNames = Arrays.asList("Amitabh", "Shekhar", "Aman", "Rahul",
+        List<String> memberNames;
+        memberNames = Arrays.asList("Amitabh", "Shekhar", "Aman", "Rahul",
                 "Shahrukh", "Abibaba", "Salman", "Yana", "Lokesh", "Lando");
 
+        // Task 6a: Displaying All Names Starting with Letter 'A' and are more than 5 Characters long
         List<String> filteredNames = memberNames.stream()
                 .filter(str -> str.startsWith("A") && str.length() >5)
                 .toList();
+
         printFancyTable(filteredNames, "Task 6a: Displaying Names Starting with Letter 'A' and are more than 5 Characters long");
         System.out.println();
+
 
         // Task 6b: Sorting Names and displaying them in lowercase
         List<String> sortedLowercaseNames = memberNames.stream()
                 .sorted(Comparator.reverseOrder())
                 .map(String::toLowerCase)
                 .toList();
+
         printFancyTable(sortedLowercaseNames, "Task 6b: Sorting Names and displaying them in lowercase");
         System.out.println();
         System.out.println();
+
 
         // Task 7a: Checking if the list contains names with the letter ‘S’ (Any Match / All Match)
         Predicate<String> containsS = str -> str.toUpperCase().contains("S"); // Case Insensitive Check
@@ -38,10 +43,12 @@ public class StringListManipulation {
         List<String> namesWithS = memberNames.stream()
                 .filter(containsS)
                 .toList();
+
         printFancyTable(namesWithS, "Task 7a: Names containing the letter 'S'");
         printFancyTable(Collections.singletonList(allMatchResult), "Do all names contain 'S'?");
         printFancyTable(Collections.singletonList(anyMatchResult), "Does any name contain 'S'?");
         System.out.println();
+
 
         // Task 7b: Checking if the list contains names with the letter ‘H’ (None Match)
         Predicate<String> containsH = str -> str.toUpperCase().contains("H");
@@ -50,42 +57,50 @@ public class StringListManipulation {
         List<String> namesWithH = memberNames.stream()
                 .filter(containsH)
                 .toList();
+
         printFancyTable(namesWithH, "Task 7b: Names containing the letter 'H'");
         printFancyTable(Collections.singletonList(noneMatchResult), "Are there any names that don't contain 'H'?");
         System.out.println();
         System.out.println();
 
+
         // Task 8-9: Counting the Numbers of Names Starting with 'A'
         long countNamesStartingWithA = memberNames.stream()
                 .filter(str -> str.startsWith("A"))
                 .count();
+
         printFancyTable(Collections.singletonList(countNamesStartingWithA), "Task 8-9: Names Starting with the letter 'A'");
         System.out.println();
         System.out.println();
+
 
         // Task 10a: Finding the first name starting with 'L'
         Optional<String> firstNameStartingWithL = memberNames.stream()
                 .filter(str -> str.startsWith("L"))
                 .findFirst();
+
         printFancyTable(Collections.singletonList(firstNameStartingWithL.orElse("No Name Found")), "Task 10a: First Name Starting with the Letter 'L'");
         System.out.println();
+
 
         // Task 10b: Finding any name starting with 'L'
         Optional<String> anyNameStartingWithL = memberNames.stream()
                 .filter(str -> str.startsWith("L"))
                 .findAny();
+
         printFancyTable(Collections.singletonList(anyNameStartingWithL.orElse("No Name Found")), "Task 10b: Any Starting with the Letter 'L'");
         System.out.println();
+
 
         // Task 10c: Finding all names starting with 'L'
         List<String> allNamesStartingWithL = memberNames.stream()
                 .filter(str -> str.startsWith("L"))
                 .toList();
+
         printFancyTable(allNamesStartingWithL, "Task 10c: All Names Starting with the Letter 'L'");
-        System.out.println();
-        System.out.println();
     }
 
+    // Utility Method to Print Fancy Table
     public static void printFancyTable(List<?> items, String title) {
         int width = 94;
         String border = "+" + "-".repeat(width - 2) + "+";
