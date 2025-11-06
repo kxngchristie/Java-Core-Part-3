@@ -1,8 +1,8 @@
-# 🚀 Java-Core-Part-3
+# Java-Core-Part-3 🚀
 
 This project contains practical Java programming tasks focusing on modern Java features and functional programming concepts. Perfect for learning and practicing Java! ✨
 
-## 📁 Project Structure
+## Project Structure 📁
 
 ```
 src/
@@ -32,50 +32,89 @@ src/
             └── LettersOnlyListTest.java             # 🧪 Letters Only List Tests
 ```
 
-## ⚙️ Prerequisites
+### Home Tasks 📝
+
+#### Task 1: Random Numbers Generator (`tasks/task1/`)
+Files:
+- `RandNumbersGen.java`
+
+Tasks:
+- 🎲 Generate random numbers with specified parameters
+- 🔢 Learn about Java's random number generation capabilities
+- 📊 Practice number generation and validation
+
+---
+
+#### Task 2: Random Numbers Arrays (`tasks/task2/`)
+Files:
+- `RandNumbersGenArrays.java`
+
+Tasks:
+- 📊 Create and manipulate arrays of random numbers
+- 🔄 Practice array operations
+- 🎯 Advanced array handling techniques
+
+---
+
+#### Task 3: String List Manipulation (`tasks/task3/`)
+Files:
+- `StringListManipulation.java`
+
+Tasks:
+- 📝 Process and transform lists of strings
+- 🔍 String operations and filtering
+- ✨ Modern Java features implementation
+
+---
+
+#### Task 4: Array Concatenation (`tasks/task4/`)
+Files:
+- `ArrayConcatenation.java`
+
+Tasks:
+- 🔄 Combine multiple arrays efficiently
+- 📊 Array manipulation techniques
+- 🎯 Performance optimization
+
+---
+
+#### Task 5: Letters Only List (`tasks/task5/`)
+Files:
+- `LettersOnlyList.java`
+
+Tasks:
+- ✍️ Filter and process strings based on character types
+- 🔍 String validation and filtering
+- 📝 Advanced string manipulation
+
+## Key Topics Covered 📚
+
+1. Modern Java Features 🎯
+   - 🔄 Functional Programming
+   - 📊 Array and List Operations
+   - 🎲 Random Number Generation  
+   
+2. Data Manipulation 📊
+   - 📝 String Processing
+   - 🔄 Array Operations
+   - ✨ List Transformations
+
+3. Testing Implementation 🧪
+   - ✅ Unit Testing
+   - 🔍 Test Cases
+   - 📊 Test Coverage
+
+## Requirements ⚙️
 
 - ☕ Java JDK 8 or higher
 - 🛠️ Maven
 - 💻 Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, etc.)
 
-## 🚀 Setup
+## Getting Started 🏁
 
 1. 📥 Clone the repository
 2. 📂 Navigate to the project directory
 3. ⚡ Run `mvn clean install` to build the project
+4. 🧪 Execute tests with `mvn test`
 
-## 📚 Home Tasks
-
-1. 🎲 **Random Numbers Generator**
-   - Generate random numbers with specified parameters
-   - Learn about Java's random number generation capabilities
-
-2. 📊 **Random Numbers Arrays**
-   - Create and manipulate arrays of random numbers
-   - Practice array operations and random number generation
-
-3. 📝 **String List Manipulation**
-   - Process and transform lists of strings
-   - Apply modern Java features for string operations
-
-4. 🔄 **Array Concatenation**
-   - Combine multiple arrays efficiently
-   - Learn advanced array manipulation techniques
-
-5. ✍️ **Letters Only List**
-   - Filter and process strings based on character types
-   - Practice string manipulation and filtering
-
-## 🧪 Testing
-
-Each task comes with its own test suite in the `src/test/java/tasks` directory. To run all tests:
-
-```bash
-mvn test
-```
-
-## 🛠️ Built With
-
-- ☕ Java
-- 📦 Maven
-- 🧪 JUnit
+Happy Coding! 💻
