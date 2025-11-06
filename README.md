@@ -1,6 +1,6 @@
 # Java-Core-Part-3 🚀
 
-This project contains practical Java programming tasks focusing on modern Java features and functional programming concepts. Perfect for learning and practicing Java! ✨
+This project contains practical Java programming tasks focusing on modern Java features and functional programming concepts. Perfect for learning and practising Java! ✨
 
 ## Project Structure 📁
 
@@ -74,7 +74,7 @@ Files:
 Tasks:
 - 🔄 Combine multiple arrays efficiently
 - 📊 Array manipulation techniques
-- 🎯 Performance optimization
+- 🎯 Performance optimisation
 
 ---
 
@@ -108,7 +108,7 @@ Tasks:
 
 - ☕ Java JDK 8 or higher
 - 🛠️ Maven
-- 💻 Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, etc.)
+- 💻 Any Java IDE (IntelliJ IDEA recommended)
 
 ## Getting Started 🏁
 
@@ -117,4 +117,4 @@ Tasks:
 3. ⚡ Run `mvn clean install` to build the project
 4. 🧪 Execute tests with `mvn test`
 
-Happy Coding! 💻
+Happy Coding and Testing! 💻🧪
