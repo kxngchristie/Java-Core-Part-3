@@ -54,7 +54,7 @@ public class ArrayConcatenation {
         System.out.println();
 
 
-        //Task 13a: Moving list into a Map where key = element, value = frequency (Optional) Implementation #1
+        // Task 13a: Moving list into a Map where key = element, value = frequency (Optional) Implementation #1
         // <Integer, Long> Implementation #1: counting() returns long
         Map<Integer, Long> numbersFrequencyMappingLong = numbersList.stream()
                 .collect(Collectors.groupingBy(num -> num, Collectors.counting()));
