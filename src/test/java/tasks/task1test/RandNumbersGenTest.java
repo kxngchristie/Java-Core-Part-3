@@ -17,7 +17,7 @@ public class RandNumbersGenTest {
     void testManualStreamOfElements() {
         List<Integer> manualStream = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).toList();
 
-        assertEquals(Arrays.asList(1,2,3,4,5,6,7,8,9), manualStream);
+        assertEquals(Arrays.asList(1,2,3,4,5,6,7,8,9), manualStream);,
     }
 
 
