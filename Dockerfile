@@ -27,4 +27,4 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # ENTRYPOINT for running tests
-ENTRYPOINT ["mvn", "clean test"]
+ENTRYPOINT ["mvn", "test"]
