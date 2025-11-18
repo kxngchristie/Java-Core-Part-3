@@ -29,7 +29,7 @@ pipeline {
 			steps {
 				sh '''
             mkdir -p target
-            docker cp java-core-tests-container:/Java-Core-Part-3/target/allure-results ./target/allure-results
+            docker cp java-core-tests-container:/Java-Core-Part-3/target/allure-results ./target/allure-results || echo "No allure-results found"
         '''
 			}
 		}
